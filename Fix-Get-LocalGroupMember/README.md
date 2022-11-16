@@ -20,11 +20,20 @@ This was designed to be deployed through NinjaRMM as it sits right now, but can 
 
 ## Changes that may be required
 
+The following parameter is commented out:
+
+```
+[string]$AdDomain = #"DOMAIN/*"#
+```
+By setting this, it 'should' keep your current AD domain accounts from being removed. I put this in here to account for domain-to-domain transitions or possibly in the case of hybrid. If unsure, leave it commented out.
+
 
 
 ## Ninja RMM Deployment
 
-## Parameters Explained
+
+
+### Parameters Explained
 
 I recommend using preset paramters so that you don't have to type the parameters out every time you run the script.
 
@@ -49,7 +58,7 @@ becomes
 [string]$GroupName = "Administrators,
 ```
 
-## Creating Parameters in NinjaRMM
+### Creating Parameters in NinjaRMM
 
 Inside the script editor you just need to type out the parameter in the preset parameter section, then click the "+" symbol.
 
