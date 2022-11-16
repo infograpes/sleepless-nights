@@ -50,4 +50,4 @@ becomes
 Inside the script editor you just need to type out the parameter in the preset parameter section, then click the "+" symbol.
 
 It should look like this:
-
+![Ninja Preset Parameters](https://github.com/infograpes/sleepless-nights/blob/main/Fix%20Get-LocalGroupMember/Images/PPNinjaRMM.png)
