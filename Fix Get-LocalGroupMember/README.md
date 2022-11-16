@@ -51,3 +51,11 @@ Inside the script editor you just need to type out the parameter in the preset p
 
 It should look like this:
 
+
+
+![Ninja Preset Parameters](/Fix%20Get-LocalGroupMember/Images/PPNinjaRMM.png)
+
+
+When you deploy the script, you MUST select the appropriate parameters, otherwise the script will not run properly.
+
+![Ninja Launching Script](/Fix%20Get-LocalGroupMember/Images/DeployScript.png)
