@@ -53,9 +53,9 @@ It should look like this:
 
 
 
-![Ninja Preset Parameters](/Fix%20Get-LocalGroupMember/Images/PPNinjaRMM.png)
+![Ninja Preset Parameters](/Fix-Get-LocalGroupMember/Images/PPNinjaRMM.png)
 
 
 When you deploy the script, you MUST select the appropriate parameters, otherwise the script will not run properly.
 
-![Ninja Launching Script](/Fix%20Get-LocalGroupMember/Images/DeployScript.png)
+![Ninja Launching Script](/Fix-Get-LocalGroupMember/Images/DeployScript.png)
