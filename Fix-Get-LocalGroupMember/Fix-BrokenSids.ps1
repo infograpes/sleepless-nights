@@ -49,7 +49,7 @@ param(
 )
 
 
-$LocalSids = @(([ADSI]"$GroupPath").psbase.Invoke('Members') | % { $_.GetType().InvokeMember('AdsPath', 'GetProperty', $null, $($_), $null) }) -match '^WinNT';
+$LocalSids = @(([ADSI]"$GroupPath").psbase.Invoke('Members') | ForEach-Object { $_.GetType().InvokeMember('AdsPath', 'GetProperty', $null, $($_), $null) }) -match '^WinNT';
 
 $LocalSids = $LocalSids -replace "WinNT://", ""
 
