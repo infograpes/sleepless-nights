@@ -45,7 +45,7 @@ param(
     [string]$GroupName = '',
     [string]$LocalMachine = "$env:COMPUTERNAME/*",
     [string]$AzDomain = "AzureAD/*",
-    [string]$AdDomain = "DOMAIN/*"
+    [string]$AdDomain = #"DOMAIN/*"#
 )
 
 
@@ -57,7 +57,7 @@ Write-Output "The following SIDS were found in the $GroupPath path."
 
 $LocalSids
 
-Write-Output "Parsing through accounts in the $GroupPath and removing any that do not match the local machine, AzureAD, or AD domain."
+Write-Output "Parsing through accounts in the $GroupPath path and removing any that do not match the local machine, AzureAD, or AD domain."
 
 foreach ($LocalSids in $LocalSids) {
 
